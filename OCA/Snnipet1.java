@@ -2,16 +2,13 @@ package clase;
 
 public class Snnipet1 {
 
-	public static void main(String[] args) {
-		
-		int i = 28;
-		switch(i %2)
-		{
-		case 0: System.out.println("even");
-		case 1: System.out.println("odd");
-
-		}
+	private int kilometers;
+	public void setKilometers(int newKilometers) {
+		if(newKilometers >= 10500)
+			kilometers = newKilometers;
 
 	}
-
+	public int getKilometers() {
+		return kilometers;
+	}
 }
