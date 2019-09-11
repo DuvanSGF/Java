@@ -1,22 +1,25 @@
-package clase;
+package calculadora;
+
+
 
 public class FeedingSchedule {
 
 	public static void main(String[] args) {
-		boolean keepGoing = true;
-		int count = 0;
-		int x = 3;
-		while(count++ < 3){
-			//System.out.println(count);
-			int y = (1 + 2 * count) % 3;
-			System.out.println(y);
-			switch(y) {
-			default:
-			case 0: x-=1; break;
-			case 1: x +=5;
-			}
-		}
+		int x = 5, j = 0;
+				OUTER: for(int i=0; i<3;)
+					INNER: do {
+						i++; x++;
+						System.out.println(x);
+						if(x>10) break INNER;
+						x +=4;
+						j++;
+						
+					} while(j<=2);
+			
 System.out.println(x);
+			}
+		
+
 	}
 
-}
+
